@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#075E7C"
+    android:layout_height="match_parent"
+    tools:context=".UserProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/user_update_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/user_avatar"
+        android:layout_marginTop="10dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/b"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Old Password"
+        android:textColor="#fff"
+        android:textColorHint="fff"
+        android:background="@drawable/border"
+        android:paddingStart="20dp"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:layout_margin="10dp"
+        android:id="@+id/update_edt_old_password"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Password"
+        android:textColor="#fff"
+        android:textColorHint="fff"
+        android:background="@drawable/border"
+        android:paddingStart="20dp"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:layout_margin="10dp"
+        android:id="@+id/update_edt_new_password"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:singleLine="true"
+        android:layout_margin="10dp"
+
+        android:textColor="#fff"
+        android:textColorHint="fff"
+        android:background="@drawable/border"
+        android:paddingStart="20dp"
+        android:textSize="20sp"
+        android:padding="10dp"
+
+        android:id="@+id/update_edt_full_name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColor="#fff"
+        android:textColorHint="fff"
+        android:background="@drawable/border"
+        android:paddingStart="20dp"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:layout_margin="10dp"
+        android:id="@+id/update_edt_email"/>
+
+    <EditText
+        android:textColor="#fff"
+        android:textColorHint="fff"
+        android:background="@drawable/border"
+        android:paddingStart="20dp"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:singleLine="true"
+        android:layout_margin="10dp"
+        android:id="@+id/update_edt_phone"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Profile"
+        android:layout_margin="20dp"
+        android:textColor="#fff"
+        android:textColorHint="fff"
+        android:background="@drawable/border"
+        android:paddingStart="20dp"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:id="@+id/update_user_profile_button"/>
+
+</LinearLayout>
